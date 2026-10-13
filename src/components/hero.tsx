@@ -40,7 +40,7 @@ export default function Hero({
       {/* ======================================================== */}
       <section
         id="home"
-        className="relative pt-35 pb-16  overflow-hidden"
+        className="relative pt-17 pb-16  overflow-hidden"
       >
         {/* Subtle ambient lighting glows */}
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[580px] lg:w-[760px] h-[340px] sm:h-[450px] lg:h-[520px] bg-teal-100/35 rounded-full blur-3xl -z-10 pointer-events-none" />
@@ -51,7 +51,7 @@ export default function Hero({
             {/* Left Column: Text & CTAs */}
             <div className="lg:col-span-7 flex flex-col items-start text-left z-10">
               {/* Pill Announcement Badge */}
-              <Link
+              {/* <Link
                 href="/software-problems"
                 className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50/90 border border-teal-200/70 shadow-2xs mb-6 group hover:bg-teal-100/70 transition"
               >
@@ -64,7 +64,7 @@ export default function Hero({
                     ↗
                   </span>
                 </span>
-              </Link>
+              </Link> */}
 
               {/* Main Headline with Editorial Serif Italic Accent */}
               <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.1] mb-5 sm:mb-6">
