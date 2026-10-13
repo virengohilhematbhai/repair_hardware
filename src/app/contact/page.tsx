@@ -52,7 +52,7 @@ export default function ContactPage() {
         {/* Ambient Top Glows */}
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[340px] sm:w-[620px] h-[340px] sm:h-[450px] bg-teal-100/30 rounded-full blur-3xl -z-10 pointer-events-none" />
 
-        <div className="max-w-8xl mx-auto px-20">
+        <div className="max-w-8xl mx-auto px-4 sm:px-20 ">
           {/* Header Section (Motivo Style) */}
           <div className="text-center max-w-4xl mx-auto mb-14 sm:mb-15">
             {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-2xs mb-5">

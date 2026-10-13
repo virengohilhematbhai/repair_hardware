@@ -88,7 +88,7 @@ export default function DisplayProblemsPage() {
       <Navbar />
 
       <main className="flex-1 pt-28 pb-20">
-        <div className="max-w-8xl mx-auto px-20 ">
+        <div className="max-w-8xl mx-auto px-4 sm:px-20 ">
           {/* Centered Editorial Header (Matching Reference Screenshot) */}
           <div className="text-center max-w-5xl mx-auto mb-14 sm:mb-16">
             {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50/90 border border-teal-200/90 shadow-2xs mb-5">
