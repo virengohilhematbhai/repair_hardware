@@ -101,7 +101,7 @@ export default function MetricsBar({ className }: { className?: string }) {
   return (
     <section
       id="metrics"
-      className={className ?? "relative -mt-6 sm:mb-15 z-20 max-w-8xl px-20 mx-auto px-4 sm:px-6"}
+      className={className ?? "relative -mt-6 sm:mb-15 z-20 max-w-8xl px-20 mx-auto"}
     >
       <div className="bg-white rounded-3xl border border-slate-200/80 shadow-lg shadow-slate-200/50 p-6 sm:p-8">
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
