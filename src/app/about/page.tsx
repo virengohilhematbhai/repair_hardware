@@ -98,7 +98,7 @@ export default function AboutPage() {
         {/* Ambient Top Glow */}
         <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[340px] sm:w-[620px] h-[340px] sm:h-[450px] bg-teal-100/30 rounded-full blur-3xl -z-10 pointer-events-none" />
 
-        <div className="max-w-8xl mx-auto px-10 sm:px-20 ">
+        <div className="max-w-8xl mx-auto px-7 sm:px-20 ">
           {/* Header Section (Motivo Style) */}
           <div className="text-center max-w-5xl mx-auto mb-16 sm:mb-20">
             {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-2xs mb-5">
