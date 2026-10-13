@@ -168,8 +168,8 @@ export default function Hero({
       {/* 3. MOTIVO FEATURE SECTION: DASHBOARD PREVIEW + FEATURES LIST */}
       {/* ======================================================== */}
 
-      <section id="features" className="py-10 max-w-7xl  mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-8xl  px-20 mx-auto mb-14 sm:mb-16">
+      <section id="features" className="py-10 max-w-8xl  mx-auto px-20">
+        <div className="text-center  mx-auto mb-14 sm:mb-16">
           {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50/90 border border-teal-200/90 shadow-2xs mb-5">
               <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
               <span className="text-xs font-semibold text-teal-900 tracking-wide">
@@ -412,8 +412,8 @@ export default function Hero({
       {/* ======================================================== */}
       {/* 4. FOUR STEP / DOMAIN CARDS (Matching Reference Layout) */}
       {/* ======================================================== */}
-      <section id="troubleshooting" className="py-10  max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center max-w-9xl px-20 mx-auto mb-14 sm:mb-16">
+      <section id="troubleshooting" className="py-10  max-w-8xl px-20 mx-auto ">
+        <div className="text-center max-w-8xl px-20 mx-auto mb-14 sm:mb-16">
           {/* <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
             Guided Diagnostics
           </span> */}
@@ -557,7 +557,7 @@ export default function Hero({
       {/* ======================================================== */}
       {/* 5. MOTIVO SPLIT TESTIMONIAL + CTA BANNER (Directly matching image bottom) */}
       {/* ======================================================== */}
-      <section className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="py-12 sm:py-16 max-w-8xl mx-auto px-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left Split: Dark Forest Teal Card */}
           <div className="lg:col-span-5 bg-gradient-to-br from-[#0d5e56] via-[#115e59] to-[#134e4a] text-white rounded-3xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden shadow-lg">
