@@ -46,7 +46,7 @@ export default function Hero({
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[580px] lg:w-[760px] h-[340px] sm:h-[450px] lg:h-[520px] bg-teal-100/35 rounded-full blur-3xl -z-10 pointer-events-none" />
         <div className="absolute top-16 right-0 sm:right-10 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-cyan-100/30 rounded-full blur-2xl -z-10 pointer-events-none" />
 
-        <div className="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-8xl mx-auto px-4 px-20 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
             {/* Left Column: Text & CTAs */}
             <div className="lg:col-span-7 flex flex-col items-start text-left z-10">
