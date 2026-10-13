@@ -376,7 +376,7 @@ export default function AboutPage() {
 
           {/* Live Animated Metrics Counter */}
           <div className="mb-20">
-            <MetricsBar className="relative z-20 max-w-7xl mx-auto px-0" />
+            <MetricsBar className="relative z-20 max-w-8xl mx-auto px-0" />
           </div>
 
           {/* CTA Box (Motivo style) */}
