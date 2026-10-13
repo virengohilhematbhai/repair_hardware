@@ -46,7 +46,7 @@ export default function Hero({
         <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[340px] sm:w-[580px] lg:w-[760px] h-[340px] sm:h-[450px] lg:h-[520px] bg-teal-100/35 rounded-full blur-3xl -z-10 pointer-events-none" />
         <div className="absolute top-16 right-0 sm:right-10 w-64 sm:w-80 lg:w-96 h-64 sm:h-80 lg:h-96 bg-cyan-100/30 rounded-full blur-2xl -z-10 pointer-events-none" />
 
-        <div className="max-w-8xl mx-auto px-4 sm:px-20 ">
+        <div className="max-w-8xl mx-auto px-10 sm:px-20 ">
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-8 items-center">
             {/* Left Column: Text & CTAs */}
             <div className="lg:col-span-7 flex flex-col items-start text-left z-10">
@@ -168,7 +168,7 @@ export default function Hero({
       {/* 3. MOTIVO FEATURE SECTION: DASHBOARD PREVIEW + FEATURES LIST */}
       {/* ======================================================== */}
 
-      <section id="features" className="py-10 max-w-8xl  mx-auto px-4 sm:px-20">
+      <section id="features" className="py-10 max-w-8xl  mx-auto px-10 sm:px-20">
         <div className="text-center  mx-auto mb-14 sm:mb-16">
           {/* <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50/90 border border-teal-200/90 shadow-2xs mb-5">
               <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
@@ -412,7 +412,7 @@ export default function Hero({
       {/* ======================================================== */}
       {/* 4. FOUR STEP / DOMAIN CARDS (Matching Reference Layout) */}
       {/* ======================================================== */}
-      <section id="troubleshooting" className="py-10  max-w-8xl px-4 sm:px-20 mx-auto ">
+      <section id="troubleshooting" className="py-10  max-w-8xl px-10 sm:px-20 mx-auto ">
         <div className="text-center  px-10 sm:px-20 mx-auto mb-14 sm:mb-16">
           {/* <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200">
             Guided Diagnostics
@@ -557,7 +557,7 @@ export default function Hero({
       {/* ======================================================== */}
       {/* 5. MOTIVO SPLIT TESTIMONIAL + CTA BANNER (Directly matching image bottom) */}
       {/* ======================================================== */}
-      <section className="py-12 sm:py-16 max-w-8xl mx-auto px-4 sm:px-20">
+      <section className="py-12 sm:py-16 max-w-8xl mx-auto px-10 sm:px-20">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Left Split: Dark Forest Teal Card */}
           <div className="lg:col-span-5 bg-gradient-to-br from-[#0d5e56] via-[#115e59] to-[#134e4a] text-white rounded-3xl p-8 sm:p-10 flex flex-col justify-between relative overflow-hidden shadow-lg">
