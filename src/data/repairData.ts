@@ -85,6 +85,9 @@ export interface ProblemGuide {
   steps: string[];
   commandOrShortcut?: string;
   preventionTip?: string;
+  youtubeUrl?: string;
+  youtubeId?: string;
+  youtubeTitle?: string;
 }
 
 // ==========================================
@@ -498,6 +501,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "devmgmt.msc",
     preventionTip: "Avoid third-party brightness dimming overlay apps that interfere with Windows DDC/CI monitor communication.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Brightness%20Control%20Not%20Working%20tutorial",
+    youtubeId: "F3xK8vO2u3E",
+    youtubeTitle: "How to Fix Brightness Slider Not Working in Windows 11 / 10",
   },
   {
     id: "disp-2",
@@ -522,6 +528,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "Win + Ctrl + Shift + B",
     preventionTip: "Never use cheap passive VGA-to-HDMI adapters; always use active certified converters.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Computer%20Black%20Screen%20tutorial",
+    youtubeId: "wN4-HnL0vK8",
+    youtubeTitle: "How to Fix Computer Turns On But No Display On Screen",
   },
   {
     id: "disp-3",
@@ -546,6 +555,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: 'reg add "HKLM\\SYSTEM\\CurrentControlSet\\Control\\GraphicsDrivers" /v TdrDelay /t REG_DWORD /d 8 /f',
     preventionTip: "Use Studio Drivers instead of Game Ready drivers if you prioritize absolute rock-solid system stability for work.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Display%20Driver%20Error%20tutorial",
+    youtubeId: "kY31Wn6Ghy8",
+    youtubeTitle: "How to Fix Display Driver Stopped Responding and Has Recovered",
   },
   {
     id: "disp-4",
@@ -570,6 +582,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "Win + P (Select Extend)",
     preventionTip: "Always plug dual high-resolution monitors directly into dedicated GPU ports rather than sharing a single unpowered hub.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20External%20Monitor%20Not%20Detected%20tutorial",
+    youtubeId: "J9H7J_sT6c0",
+    youtubeTitle: "Fix Windows 11 Not Detecting Second External Monitor",
   },
   {
     id: "disp-5",
@@ -593,6 +608,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "ms-settings:display-advanced",
     preventionTip: "Never spray cleaning fluid directly onto monitor screens as liquid seeps into bottom bezel driver boards.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Horizontal%20or%20Vertical%20Lines%20on%20Screen%20tutorial",
+    youtubeId: "e1A9qU6A7aU",
+    youtubeTitle: "How to Fix Horizontal or Vertical Lines on Laptop & PC Screen",
   },
   {
     id: "disp-6",
@@ -617,6 +635,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "ms-settings:display",
     preventionTip: "Keep all monitors in multi-screen setups at matching or integer-ratio scaling factors for seamless cursor transitions.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Incorrect%20Display%20Scaling%20tutorial",
+    youtubeId: "UqQY9b1LqE4",
+    youtubeTitle: "How to Fix Blurry Apps and Resolution Scaling in Windows 11",
   },
   {
     id: "disp-7",
@@ -640,6 +661,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "ms-settings:display-advanced",
     preventionTip: "Never use DisplayPort cables longer than 2 meters without an active signal repeater for high-refresh rates.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Screen%20Flickering%20at%20High%20Refresh%20Rates%20tutorial",
+    youtubeId: "7h2p3h-V3gQ",
+    youtubeTitle: "How to Fix Monitor Screen Flickering on Windows 11 & 10",
   },
   {
     id: "disp-8",
@@ -663,6 +687,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "nvidia-smi -q -d TEMPERATURE",
     preventionTip: "Clean computer dust filters every 3 months to prevent VRAM thermal pad baking.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20GPU%20Artifacting%20%26%203D%20Glitches%20tutorial",
+    youtubeId: "RkP-jJv767M",
+    youtubeTitle: "Diagnosing & Fixing GPU Artifacting, VRAM Faults and Glitches",
   },
   {
     id: "disp-9",
@@ -686,6 +713,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "Win + Ctrl + Shift + B",
     preventionTip: "Always turn off monitor power before plugging or unplugging high-bandwidth DisplayPort cables.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20No%20Signal%20on%20HDMI%20or%20DisplayPort%20tutorial",
+    youtubeId: "H7BsqzP7Vf8",
+    youtubeTitle: "Monitor Says No Signal - HDMI / DisplayPort Quick Troubleshooting",
   },
   {
     id: "disp-10",
@@ -709,6 +739,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "ms-settings:display",
     preventionTip: "Only enable Windows HDR on monitors featuring local dimming or true DisplayHDR 600/1000/OLED panels.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20HDR%20Colors%20Washed%20Out%20%26%20Gray%20tutorial",
+    youtubeId: "b4N8eX7Q9iI",
+    youtubeTitle: "Fix Windows 11 HDR Washed Out Dull Gray Colors Tutorial",
   },
   {
     id: "disp-11",
@@ -732,6 +765,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "ms-settings:display-advanced",
     preventionTip: "Match refresh rates or use integer multiples (e.g. 60Hz + 120Hz) across dual monitors for smoothest desktop experience.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Dual%20Monitor%20Cursor%20Stutter%20tutorial",
+    youtubeId: "G9jF8W0X8e0",
+    youtubeTitle: "How to Fix Mouse Cursor Stutter on Dual Monitor Setup",
   },
   {
     id: "disp-12",
@@ -754,6 +790,9 @@ export const displayGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "F11 (Full Screen Browser Test)",
     preventionTip: "Check manufacturer zero-bright-dot warranty terms before purchase to ensure free panel replacement.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Stuck%20or%20Dead%20Pixel%20Correction%20tutorial",
+    youtubeId: "wY_dD5l6u6E",
+    youtubeTitle: "How to Fix Stuck & Dead Pixels on an LCD or OLED Screen",
   },
 ];
 
@@ -784,6 +823,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "mdsched.exe (Windows Memory Diagnostic)",
     preventionTip: "Always use slots 2 and 4 for 2-stick configurations as daisy-chain motherboard traces require populated slot ends.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Motherboard%20Continuous%20Beeps%20tutorial",
+    youtubeId: "Xh0l0iR_lQ8",
+    youtubeTitle: "Motherboard Continuous POST Beep Codes Explained & RAM Fix",
   },
   {
     id: "hw-2",
@@ -808,6 +850,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "devmgmt.msc",
     preventionTip: "Support heavy 3-fan graphics cards with an anti-sag GPU bracket to avoid damaging motherboard PCIe soldering.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%201%20Long%2C%202%20Short%20POST%20Beeps%20tutorial",
+    youtubeId: "V9X8qK3I8t0",
+    youtubeTitle: "1 Long 2 Short Beeps Fix: Reseating GPU and Video Card Memory",
   },
   {
     id: "hw-3",
@@ -831,6 +876,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "HWInfo64: Check +12V, +5V, +3.3V Rails",
     preventionTip: "Always choose 80 Plus Bronze or Gold rated power supplies from tier-A manufacturers with active PFC.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Continuous%20Rapid%20Beeps%20(PSU%20Voltage)%20tutorial",
+    youtubeId: "P6jQ-N1J6aY",
+    youtubeTitle: "How to Test a PC Power Supply With a Paperclip or Tester",
   },
   {
     id: "hw-4",
@@ -855,6 +903,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "HWInfo64 (Monitor CPU Package Temp)",
     preventionTip: "Replace CPU thermal paste every 2 years to prevent drying and thermal conductivity loss.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20CPU%20Thermal%20Throttling%20at%2095%C2%B0C%20tutorial",
+    youtubeId: "RHYgqIkgwU4",
+    youtubeTitle: "How to Repaste CPU & Fix High Temperature Thermal Throttling",
   },
   {
     id: "hw-5",
@@ -878,6 +929,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "Multimeter: Pin 9 (Purple 5VSB) should read 5V",
     preventionTip: "Always plug desktop PCs into a dedicated surge protector or uninterruptible power supply (UPS).",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Computer%20Won't%20Power%20On%20At%20All%20tutorial",
+    youtubeId: "f9vT8X09y8g",
+    youtubeTitle: "Computer Won't Turn On At All - Bench Troubleshooting Steps",
   },
   {
     id: "hw-6",
@@ -902,6 +956,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "diskpart → list disk",
     preventionTip: "Never over-tighten M.2 mounting screws as bowing the PCB breaks fragile surface-mount NAND traces.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20M.2%20NVMe%20SSD%20Not%20Detected%20in%20BIOS%20tutorial",
+    youtubeId: "jW93uTfB3y0",
+    youtubeTitle: "M.2 NVMe SSD Not Detected in BIOS or Windows Setup Solution",
   },
   {
     id: "hw-7",
@@ -925,6 +982,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "devmgmt.msc",
     preventionTip: "Never force USB connectors in upside-down as this shears the plastic guide tab and causes direct short circuits.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20USB%20Port%20Power%20Surge%20Warning%20tutorial",
+    youtubeId: "9g0H2B3K_4A",
+    youtubeTitle: "Power Surge on the USB Port Error: Diagnosis & Safe Fix",
   },
   {
     id: "hw-8",
@@ -948,6 +1008,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "Event Viewer: Event ID 41 (Kernel-Power)",
     preventionTip: "Account for 150W of transient headroom above calculated component wattage when buying power supplies.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20PC%20Shuts%20Down%20Randomly%20Under%20Load%20tutorial",
+    youtubeId: "Y8kC8Qp1XkQ",
+    youtubeTitle: "PC Shuts Down When Gaming - Overheating or PSU Overcurrent",
   },
   {
     id: "hw-9",
@@ -971,6 +1034,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "FanControl.exe",
     preventionTip: "Capping frame rates to your monitor refresh rate eliminates 90% of electrical inductor coil whine.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Loud%20Fan%20Noise%20%26%20Coil%20Whine%20tutorial",
+    youtubeId: "F5d2kP0J-eI",
+    youtubeTitle: "How to Stop GPU Coil Whine & Tune Quiet Fan Curves",
   },
   {
     id: "hw-10",
@@ -995,6 +1061,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "timedate.cpl",
     preventionTip: "CR2032 motherboard batteries last 3–5 years; replace immediately if time synchronization errors occur.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20CMOS%20Battery%20Dead%20%26%20BIOS%20Resetting%20tutorial",
+    youtubeId: "AOq9QY3I0t8",
+    youtubeTitle: "How to Replace CR2032 CMOS Battery & Reset BIOS Settings",
   },
   {
     id: "hw-11",
@@ -1018,6 +1087,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "mmsys.cpl",
     preventionTip: "Use dedicated USB DACs or rear audio ports for superior shielding against motherboard electromagnetic interference.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Front%20Audio%20Jack%20Not%20Working%20tutorial",
+    youtubeId: "M9lK3P8_6gA",
+    youtubeTitle: "Front Panel Headphone Audio Jack Not Working (HD Audio Header)",
   },
   {
     id: "hw-12",
@@ -1041,6 +1113,9 @@ export const hardwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "Inspect PCIe Link: GPU-Z Bus Interface",
     preventionTip: "Always install an anti-sag support bracket immediately when assembling GPUs with 3 fans or dual-slot heatsinks.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20GPU%20Sag%20%26%20PCIe%20Slot%20Strain%20tutorial",
+    youtubeId: "9Y8sE4B-8z8",
+    youtubeTitle: "How to Prevent Heavy GPU Sag & Install Support Anti-Sag Brackets",
   },
 ];
 
@@ -1071,6 +1146,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "sfc /scannow",
     preventionTip: "Keep driver updates confined to official manufacturer WHQL signed releases rather than automatic third-party driver updaters.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20IRQL_NOT_LESS_OR_EQUAL%20Blue%20Screen%20tutorial",
+    youtubeId: "k8vL9G2p1H0",
+    youtubeTitle: "How to Fix IRQL_NOT_LESS_OR_EQUAL Blue Screen in Windows 11",
   },
   {
     id: "sw-2",
@@ -1095,6 +1173,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "DISM /Online /Cleanup-Image /RestoreHealth",
     preventionTip: "Never forcefully shut down PC by holding power button during active Windows Update installations.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20CRITICAL_PROCESS_DIED%20Crash%20tutorial",
+    youtubeId: "O1QzJ4F0W0Q",
+    youtubeTitle: "CRITICAL PROCESS DIED Blue Screen of Death Permanent Fix",
   },
   {
     id: "sw-3",
@@ -1119,6 +1200,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "net stop sysmain",
     preventionTip: "Windows 10/11 is fundamentally architected for SSD storage; mechanical hard drives should only be used for archive storage.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20100%25%20Disk%20Usage%20in%20Task%20Manager%20tutorial",
+    youtubeId: "Vz5qY5fFq10",
+    youtubeTitle: "How to Fix 100% Disk Usage in Windows 11 & Windows 10",
   },
   {
     id: "sw-4",
@@ -1142,6 +1226,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "chkdsk /f /r",
     preventionTip: "Never use automated one-click 'AI Overclocking' utilities that apply unstable low voltage curves.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20WHEA_UNCORRECTABLE_ERROR%20(0x124)%20tutorial",
+    youtubeId: "D6nQvH0K5-k",
+    youtubeTitle: "WHEA UNCORRECTABLE ERROR 0x124 - Hardware BSOD Diagnosis",
   },
   {
     id: "sw-5",
@@ -1166,6 +1253,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "net stop wuauserv && ren C:\\Windows\\SoftwareDistribution SoftwareDistribution.old && net start wuauserv",
     preventionTip: "Never delete active system files manually; stopping Windows Update services before renaming folders guarantees clean cache creation.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Windows%20Update%20Error%200x80070002%20tutorial",
+    youtubeId: "9pG8z8L_0H0",
+    youtubeTitle: "How to Fix Windows 11 Update Error 0x80070002 / 0x80070003",
   },
   {
     id: "sw-6",
@@ -1190,6 +1280,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "net start Audiosrv",
     preventionTip: "Keep audio enhancements disabled in Sound Properties if using professional external audio interfaces.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Audio%20Services%20Not%20Responding%20tutorial",
+    youtubeId: "K3gT6wR1Z8g",
+    youtubeTitle: "Fix Audio Services Not Responding on Windows 11 / 10",
   },
   {
     id: "sw-7",
@@ -1214,6 +1307,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "sfc /scannow & DISM /Online /Cleanup-Image /RestoreHealth",
     preventionTip: "Run sfc /scannow once a month as routine preventive maintenance to fix minor registry corruptions before they escalate.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Corrupted%20Windows%20System%20Files%20tutorial",
+    youtubeId: "6v4m9y8q1K0",
+    youtubeTitle: "How to Repair Corrupted Windows Files with SFC and DISM",
   },
   {
     id: "sw-8",
@@ -1237,6 +1333,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "msconfig",
     preventionTip: "Only keep security software and peripheral drivers (e.g. mouse/audio software) enabled in Startup apps.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Slow%20Windows%20Boot%20%26%20Startup%20Lag%20tutorial",
+    youtubeId: "8mB7v2q0W4k",
+    youtubeTitle: "Make Windows 11 Boot 10x Faster by Disabling Startup Lag",
   },
   {
     id: "sw-9",
@@ -1260,6 +1359,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "sysdm.cpl",
     preventionTip: "Let Windows automatically manage paging file size rather than forcing custom static min/max sizes.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20PAGE_FAULT_IN_NONPAGED_AREA%20(0x50)%20tutorial",
+    youtubeId: "J7m9p2L1K3g",
+    youtubeTitle: "How to Fix PAGE_FAULT_IN_NONPAGED_AREA 0x50 Blue Screen",
   },
   {
     id: "sw-10",
@@ -1284,6 +1386,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "bootrec /rebuildbcd",
     preventionTip: "Create a Windows 11 installation media USB stick to keep on hand as an emergency recovery boot drive.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Automatic%20Repair%20Loop%20tutorial",
+    youtubeId: "0kF6x4F1w3Q",
+    youtubeTitle: "How to Fix Preparing Automatic Repair Boot Loop in Windows",
   },
   {
     id: "sw-11",
@@ -1308,6 +1413,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "net stop spooler && del /Q /F /S %systemroot%\\System32\\Spool\\Printers\\*.* && net start spooler",
     preventionTip: "Always cancel failed print jobs before powering off your printer to prevent spool file locks.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20Print%20Spooler%20Service%20Keeps%20Stopping%20tutorial",
+    youtubeId: "G8n7Q2p1K4w",
+    youtubeTitle: "How to Fix Print Spooler Service Keeps Stopping in Windows",
   },
   {
     id: "sw-12",
@@ -1332,6 +1440,9 @@ export const softwareGuidesData: ProblemGuide[] = [
     ],
     commandOrShortcut: "windowsdefender://threatsettings",
     preventionTip: "Excluding programming dependency directories like node_modules dramatically speeds up development compile times.",
+    youtubeUrl: "https://www.youtube.com/results?search_query=how%20to%20fix%20High%20CPU%20by%20Antimalware%20Service%20tutorial",
+    youtubeId: "P2q3W5e8R1k",
+    youtubeTitle: "How to Fix Antimalware Service Executable High CPU Usage",
   },
 ];
 

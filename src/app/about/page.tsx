@@ -38,8 +38,6 @@ import MetricsBar from "@/components/metricsBar";
 export default function AboutPage() {
   const valueIcons = [Terminal, ShieldCheck, Layers, HeartHandshake];
 
-
-
   // Milestones timeline
   const milestones = [
     {
@@ -88,50 +86,36 @@ export default function AboutPage() {
     },
   ];
 
-
-
   return (
-    <div className="min-h-screen flex flex-col bg-[#fbfdfc] text-slate-900 selection:bg-teal-100 selection:text-teal-900">
+    <div className="min-h-screen flex flex-col bg-[#fbfdfc] dark:bg-[#060b11] text-slate-900 dark:text-[#f0fdfa] selection:bg-teal-500/30 selection:text-teal-200 transition-colors duration-200">
       <Navbar />
 
       <main className="flex-1 pt-28 pb-20">
         {/* Ambient Top Glow */}
-        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[340px] sm:w-[620px] h-[340px] sm:h-[450px] bg-teal-100/30 rounded-full blur-3xl -z-10 pointer-events-none" />
+        <div className="absolute top-10 left-1/2 -translate-x-1/2 w-[340px] sm:w-[620px] h-[340px] sm:h-[450px] bg-teal-100/30 dark:bg-teal-500/10 rounded-full blur-3xl -z-10 pointer-events-none" />
 
-        <div className="max-w-8xl mx-auto px-5 sm:px-20 ">
-          {/* Header Section (Motivo Style) */}
+        <div className="max-w-8xl mx-auto px-5 sm:px-20">
+          {/* Header Section */}
           <div className="text-center max-w-5xl mx-auto mb-16 sm:mb-20">
-            {/* <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-teal-50 border border-teal-200/80 shadow-2xs mb-5">
-              <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
-              <span className="text-xs font-semibold text-teal-900">
-                Our Mission &amp; Methodology
-              </span>
-            </div> */}
-
-            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 leading-[1.15] mb-6">
+            <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-slate-900 dark:text-white leading-[1.15] mb-6">
               Empowering everyday users.{" "}
-              <span className="font-serif-accent text-teal-700 italic font-normal">
+              <span className="font-serif-accent text-teal-700 dark:text-[#00F2B0] italic font-normal">
                 Engineered with precision.
               </span>
             </h1>
-            {/* 
-            <p className="text-base sm:text-lg text-slate-600 leading-relaxed max-w-3xl mx-auto">
-              HW Nexus is the open computer diagnostic platform engineered to demystify
-              malfunctions, eliminate costly guesswork, and empower users to restore systems with confidence.
-            </p> */}
           </div>
 
           {/* Story & Philosophy Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-stretch mb-20">
-            <div className="lg:col-span-7 space-y-6 text-slate-600 text-sm sm:text-base leading-relaxed bg-white rounded-3xl border border-slate-200/90 p-8 sm:p-12 shadow-sm flex flex-col justify-between">
+            <div className="lg:col-span-7 space-y-6 text-slate-600 dark:text-slate-300 text-sm sm:text-base leading-relaxed bg-white dark:bg-[#0c1622] rounded-3xl border border-slate-200/90 dark:border-teal-900/50 p-8 sm:p-12 shadow-sm dark:shadow-[0_10px_35px_rgba(0,0,0,0.6)] flex flex-col justify-between">
               <div>
-                <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/80">
+                <span className="text-xs font-bold uppercase tracking-wider text-teal-700 dark:text-[#00F2B0] bg-teal-50 dark:bg-teal-950/70 px-3 py-1 rounded-full border border-teal-200/80 dark:border-teal-500/30">
                   The Origin
                 </span>
-                <h2 className="text-2xl sm:text-3xl pt-5 font-bold text-slate-900 tracking-tight">
+                <h2 className="text-2xl sm:text-3xl pt-5 font-bold text-slate-900 dark:text-white tracking-tight">
                   Why We Built HW Nexus
                 </h2>
-                <div className="space-y-4 pt-3 text-slate-600">
+                <div className="space-y-4 pt-3 text-slate-600 dark:text-slate-300">
                   <p>
                     Every computer user has experienced the sudden dread of an unprompted black screen, a cryptic Blue Screen of Death (BSOD), or frantic motherboard beep codes right when critical work is due.
                   </p>
@@ -143,154 +127,116 @@ export default function AboutPage() {
                   </p>
                 </div>
               </div>
-
-              {/* Trust badges row
-              <div className="pt-6 border-t border-slate-100 flex flex-wrap gap-4 items-center">
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
-                  <span>100% Free Public Access</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
-                  <span>No Telemetry or Tracking</span>
-                </div>
-                <div className="flex items-center gap-2 text-xs font-semibold text-slate-700">
-                  <CheckCircle2 className="w-4 h-4 text-teal-600" />
-                  <span>Non-Destructive Solutions</span>
-                </div>
-              </div> */}
             </div>
 
             {/* Platform Stats Panel */}
-            <div className="lg:col-span-5 bg-gradient-to-br from-[#0d5e56] to-[#134e4a] text-white rounded-3xl p-8 sm:p-10 shadow-lg flex flex-col justify-between">
+            <div className="lg:col-span-5 bg-gradient-to-br from-[#0d5e56] to-[#134e4a] dark:from-[#052924] dark:to-[#093d38] dark:border dark:border-teal-500/30 text-white rounded-3xl p-8 sm:p-10 shadow-lg dark:shadow-[0_10px_35px_rgba(0,0,0,0.7)] flex flex-col justify-between">
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-wider text-teal-200">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-teal-200 dark:text-[#00F2B0]">
                   PLATFORM STATS
                 </span>
-                <h3 className="text-2xl sm:text-3xl font-bold text-teal-50 mt-2 mb-6">
+                <h3 className="text-2xl sm:text-3xl font-bold text-teal-50 dark:text-white mt-2 mb-6">
                   Precision Recovery at Scale
                 </h3>
                 <div className="space-y-5">
-                  <div className="border-b border-teal-700/60 pb-3">
-                    <p className="text-3xl sm:text-4xl font-bold text-teal-200">18,000+</p>
-                    <p className="text-xs text-teal-100/70 mt-1">Verified devices successfully restored</p>
+                  <div className="border-b border-teal-700/60 dark:border-teal-800/60 pb-3">
+                    <p className="text-3xl sm:text-4xl font-bold text-teal-200 dark:text-[#00F2B0]">18,000+</p>
+                    <p className="text-xs text-teal-100/70 dark:text-teal-200/80 mt-1">Verified devices successfully restored</p>
                   </div>
-                  <div className="border-b border-teal-700/60 pb-3">
-                    <p className="text-3xl sm:text-4xl font-bold text-teal-200">99.2%</p>
-                    <p className="text-xs text-teal-100/70 mt-1">First-pass diagnostic accuracy</p>
+                  <div className="border-b border-teal-700/60 dark:border-teal-800/60 pb-3">
+                    <p className="text-3xl sm:text-4xl font-bold text-teal-200 dark:text-[#00F2B0]">99.2%</p>
+                    <p className="text-xs text-teal-100/70 dark:text-teal-200/80 mt-1">First-pass diagnostic accuracy</p>
                   </div>
-                  <div className="border-b border-teal-700/60 pb-3">
-                    <p className="text-3xl sm:text-4xl font-bold text-teal-200">100%</p>
-                    <p className="text-xs text-teal-100/70 mt-1">Client-side execution with zero data storage</p>
+                  <div className="border-b border-teal-700/60 dark:border-teal-800/60 pb-3">
+                    <p className="text-3xl sm:text-4xl font-bold text-teal-200 dark:text-[#00F2B0]">100%</p>
+                    <p className="text-xs text-teal-100/70 dark:text-teal-200/80 mt-1">Client-side execution with zero data storage</p>
                   </div>
-                  {/* <div>
-                    <p className="text-3xl sm:text-4xl font-bold text-teal-200">36+</p>
-                    <p className="text-xs text-teal-100/70 mt-1">Comprehensive step-by-step diagnostic trees</p>
-                  </div> */}
                 </div>
               </div>
-
-              {/* <div className="pt-6 mt-6 border-t border-teal-700/60 flex items-center justify-between text-xs text-teal-200">
-                <span>Verified Diagnostic Database</span>
-                <span className="font-mono text-[11px] bg-teal-800/80 px-2 py-1 rounded">v2.4 LTS</span>
-              </div> */}
             </div>
           </div>
 
           {/* Comparison Matrix: The Old Way vs The HW Nexus Way */}
           <div className="mb-20">
             <div className="text-center max-w-2xl mx-auto mb-10">
-              {/* <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/80">
-                The Contrast
-              </span> */}
-              <h2 className="text-4xl font-bold text-slate-900 tracking-tight mt-3 mb-2">
+              <h2 className="text-4xl font-bold text-slate-900 dark:text-white tracking-tight mt-3 mb-2">
                 Traditional Repair vs. HW Nexus
               </h2>
-              {/* <p className="text-sm text-slate-600">
-                How our structured diagnostic engineering compares with traditional commercial shops.
-              </p> */}
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               {/* The Old Way */}
-              <div className="bg-white rounded-3xl border border-rose-100 p-8 shadow-xs relative overflow-hidden">
-                <div className="absolute top-0 right-0 bg-rose-50 text-rose-700 text-xs font-semibold px-4 py-1.5 rounded-bl-2xl border-l border-b border-rose-100">
+              <div className="bg-white dark:bg-[#0c1622] rounded-3xl border border-rose-100 dark:border-rose-950/60 p-8 shadow-xs dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] relative overflow-hidden">
+                <div className="absolute top-0 right-0 bg-rose-50 dark:bg-rose-950/70 text-rose-700 dark:text-rose-300 text-xs font-semibold px-4 py-1.5 rounded-bl-2xl border-l border-b border-rose-100 dark:border-rose-900/40">
                   Traditional Repair Shops
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
                   <XCircle className="w-5 h-5 text-rose-500" />
                   Common Industry Pitfalls
                 </h3>
-                <ul className="space-y-4 text-xs sm:text-sm text-slate-600">
+                <ul className="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
-                    <span><strong>High Diagnostic Fees:</strong> Upfront inspection charges regardless of whether the fault is identified or resolved.</span>
+                    <span className="w-5 h-5 rounded-full bg-rose-50 dark:bg-rose-950/70 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
+                    <span><strong className="text-slate-800 dark:text-white">High Diagnostic Fees:</strong> Upfront inspection charges regardless of whether the fault is identified or resolved.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
-                    <span><strong>Premature OS Reinstallation:</strong> Wiping storage drives without attempting non-destructive system repairs first.</span>
+                    <span className="w-5 h-5 rounded-full bg-rose-50 dark:bg-rose-950/70 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
+                    <span><strong className="text-slate-800 dark:text-white">Premature OS Reinstallation:</strong> Wiping storage drives without attempting non-destructive system repairs first.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
-                    <span><strong>Cryptic Technical Jargon:</strong> Vague explanations designed to justify unnecessary component replacements.</span>
+                    <span className="w-5 h-5 rounded-full bg-rose-50 dark:bg-rose-950/70 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
+                    <span><strong className="text-slate-800 dark:text-white">Cryptic Technical Jargon:</strong> Vague explanations designed to justify unnecessary component replacements.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-rose-50 text-rose-600 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
-                    <span><strong>Days of Turnaround:</strong> Leaving systems in shop queues for days for simple 5-minute driver updates.</span>
+                    <span className="w-5 h-5 rounded-full bg-rose-50 dark:bg-rose-950/70 text-rose-600 dark:text-rose-400 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✕</span>
+                    <span><strong className="text-slate-800 dark:text-white">Days of Turnaround:</strong> Leaving systems in shop queues for days for simple 5-minute driver updates.</span>
                   </li>
                 </ul>
               </div>
 
               {/* The HW Nexus Way */}
-              <div className="bg-white rounded-3xl border border-teal-200 p-8 shadow-xs relative overflow-hidden ring-1 ring-teal-500/10">
-                <div className="absolute top-0 right-0 bg-teal-50 text-teal-800 text-xs font-semibold px-4 py-1.5 rounded-bl-2xl border-l border-b border-teal-100">
+              <div className="bg-white dark:bg-[#0c1622] rounded-3xl border border-teal-200 dark:border-teal-500/30 p-8 shadow-xs dark:shadow-[0_0_30px_rgba(0,242,176,0.1)] relative overflow-hidden ring-1 ring-teal-500/10 dark:ring-teal-500/30">
+                <div className="absolute top-0 right-0 bg-teal-50 dark:bg-teal-950/80 text-teal-800 dark:text-[#00F2B0] text-xs font-semibold px-4 py-1.5 rounded-bl-2xl border-l border-b border-teal-100 dark:border-teal-500/30">
                   The HW Nexus Standard
                 </div>
-                <h3 className="text-lg font-bold text-slate-900 mb-6 flex items-center gap-2">
-                  <CheckCircle2 className="w-5 h-5 text-teal-600" />
+                <h3 className="text-lg font-bold text-slate-900 dark:text-white mb-6 flex items-center gap-2">
+                  <CheckCircle2 className="w-5 h-5 text-teal-600 dark:text-[#00F2B0]" />
                   Disciplined Engineering
                 </h3>
-                <ul className="space-y-4 text-xs sm:text-sm text-slate-600">
+                <ul className="space-y-4 text-xs sm:text-sm text-slate-600 dark:text-slate-300">
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
-                    <span><strong>100% Free &amp; Open:</strong> Complete access to all diagnostic trees, scripts, and calculators with zero paywalls.</span>
+                    <span className="w-5 h-5 rounded-full bg-teal-50 dark:bg-teal-950/70 text-teal-700 dark:text-[#00F2B0] flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
+                    <span><strong className="text-teal-900 dark:text-[#00F2B0]">100% Free &amp; Open:</strong> Complete access to all diagnostic trees, scripts, and calculators with zero paywalls.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
-                    <span><strong>Non-Destructive First:</strong> Always testing harmless software scans (DISM, SFC) before hardware is touched.</span>
+                    <span className="w-5 h-5 rounded-full bg-teal-50 dark:bg-teal-950/70 text-teal-700 dark:text-[#00F2B0] flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
+                    <span><strong className="text-teal-900 dark:text-[#00F2B0]">Non-Destructive First:</strong> Always testing harmless software scans (DISM, SFC) before hardware is touched.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
-                    <span><strong>Transparent Hex Code Explanations:</strong> Plain English breakdowns of BSOD stop codes and motherboard beep sequences.</span>
+                    <span className="w-5 h-5 rounded-full bg-teal-50 dark:bg-teal-950/70 text-teal-700 dark:text-[#00F2B0] flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
+                    <span><strong className="text-teal-900 dark:text-[#00F2B0]">Transparent Hex Code Explanations:</strong> Plain English breakdowns of BSOD stop codes and motherboard beep sequences.</span>
                   </li>
                   <li className="flex items-start gap-3">
-                    <span className="w-5 h-5 rounded-full bg-teal-50 text-teal-700 flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
-                    <span><strong>Instant Self-Repair Guidance:</strong> Step-by-step interactive workflows you can complete in minutes.</span>
+                    <span className="w-5 h-5 rounded-full bg-teal-50 dark:bg-teal-950/70 text-teal-700 dark:text-[#00F2B0] flex items-center justify-center shrink-0 text-xs font-bold mt-0.5">✓</span>
+                    <span><strong className="text-teal-900 dark:text-[#00F2B0]">Instant Self-Repair Guidance:</strong> Step-by-step interactive workflows you can complete in minutes.</span>
                   </li>
                 </ul>
               </div>
             </div>
           </div>
 
-
           {/* Core Values Section */}
           <div className="mb-20">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              {/* <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/80">
-                Guiding Principles
-              </span> */}
-              <h2 className="text-4xl font-bold text-slate-900 tracking-tight mt-3 mb-2">
+              <h2 className="text-4xl font-bold text-slate-900 dark:text-white tracking-tight mt-3 mb-2">
                 Our Engineering Philosophy
               </h2>
-              {/* <p className="text-sm text-slate-600">
-                Built on disciplined diagnostic methodologies that protect your computer and data integrity.
-              </p> */}
             </div>
 
-            {/* 4 Connected Cards Container with Horizontal Dashed Connector */}
+            {/* 4 Connected Cards Container */}
             <div className="relative">
               {/* Horizontal dashed line connecting step badges */}
-              <div className="hidden lg:block absolute top-[52px] left-[10%] right-[10%] h-[2px] border-t-2 border-dashed border-teal-200/90 z-0 pointer-events-none" />
+              <div className="hidden lg:block absolute top-[52px] left-[10%] right-[10%] h-[2px] border-t-2 border-dashed border-teal-200/90 dark:border-teal-900/60 z-0 pointer-events-none" />
 
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 relative z-10">
                 {valuesData.map((val, idx) => {
@@ -298,31 +244,31 @@ export default function AboutPage() {
                   return (
                     <div
                       key={idx}
-                      className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs flex flex-col justify-between hover:shadow-md hover:-translate-y-1 transition text-center group"
+                      className="bg-white dark:bg-[#0c1622] rounded-3xl border border-slate-200/90 dark:border-teal-900/50 p-6 shadow-xs dark:shadow-[0_10px_30px_rgba(0,0,0,0.5)] flex flex-col justify-between hover:shadow-md hover:dark:shadow-[0_0_20px_rgba(0,242,176,0.12)] hover:border-teal-300 dark:hover:border-[#00F2B0]/40 hover:-translate-y-1 transition text-center group"
                     >
                       <div>
                         {/* Concentric Double-Circle Icon */}
-                        <div className="relative w-16 h-16 rounded-full bg-teal-50 border border-teal-200 flex items-center justify-center mx-auto mb-2 shadow-2xs group-hover:scale-105 transition-transform">
-                          <div className="w-10 h-10 rounded-full bg-white text-teal-600 border border-teal-200 flex items-center justify-center shadow-2xs">
+                        <div className="relative w-16 h-16 rounded-full bg-teal-50 dark:bg-teal-950/60 border border-teal-200 dark:border-teal-500/30 flex items-center justify-center mx-auto mb-2 shadow-2xs group-hover:scale-105 transition-transform">
+                          <div className="w-10 h-10 rounded-full bg-white dark:bg-[#080f18] text-teal-600 dark:text-[#00F2B0] border border-teal-200 dark:border-teal-500/40 flex items-center justify-center shadow-2xs">
                             <Icon className="w-5 h-5" />
                           </div>
                         </div>
 
                         {/* Step Number Pill 01, 02, 03, 04 */}
-                        <div className="w-7 h-7 rounded-full font-bold text-[11px] flex items-center justify-center mx-auto -mt-5 mb-3 shadow-2xs relative z-10 bg-white border-2 border-teal-500 text-teal-900">
+                        <div className="w-7 h-7 rounded-full font-bold text-[11px] flex items-center justify-center mx-auto -mt-5 mb-3 shadow-2xs relative z-10 bg-white dark:bg-[#070d14] border-2 border-teal-500 dark:border-[#00F2B0] text-teal-900 dark:text-[#00F2B0]">
                           0{idx + 1}
                         </div>
 
                         {/* Title */}
-                        <h3 className="text-sm sm:text-base font-bold text-slate-900 leading-snug">
+                        <h3 className="text-sm sm:text-base font-bold text-slate-900 dark:text-white leading-snug">
                           {val.title}
                         </h3>
 
                         {/* Accent Underline */}
-                        <div className="w-6 h-0.5 rounded-full mx-auto my-2 bg-teal-500" />
+                        <div className="w-6 h-0.5 rounded-full mx-auto my-2 bg-teal-500 dark:bg-[#00F2B0] shadow-[0_0_6px_#00F2B0]" />
 
                         {/* Description */}
-                        <p className="text-xs text-slate-600 leading-relaxed">
+                        <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
                           {val.desc}
                         </p>
                       </div>
@@ -333,20 +279,12 @@ export default function AboutPage() {
             </div>
           </div>
 
-
-
           {/* Lab Quality Standards & Security Guarantees */}
           <div className="mb-20">
             <div className="text-center max-w-2xl mx-auto mb-12">
-              {/* <span className="text-xs font-bold uppercase tracking-wider text-teal-700 bg-teal-50 px-3 py-1 rounded-full border border-teal-200/80">
-                Engineering Integrity
-              </span> */}
-              <h2 className="text-4xl font-bold text-slate-900 tracking-tight mt-3 mb-2">
+              <h2 className="text-4xl font-bold text-slate-900 dark:text-white tracking-tight mt-3 mb-2">
                 Lab Standards &amp; Safety Guarantees
               </h2>
-              {/* <p className="text-sm text-slate-600">
-                How we protect your computer, operating system, and personal data from harm.
-              </p> */}
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -355,15 +293,15 @@ export default function AboutPage() {
                 return (
                   <div
                     key={idx}
-                    className="bg-white rounded-3xl border border-slate-200/90 p-6 shadow-xs hover:shadow-sm transition"
+                    className="bg-white dark:bg-[#0c1622] rounded-3xl border border-slate-200/90 dark:border-teal-900/50 p-6 shadow-xs hover:shadow-sm dark:hover:border-teal-500/40 transition"
                   >
-                    <div className="w-10 h-10 rounded-2xl bg-teal-50 border border-teal-200 text-teal-700 flex items-center justify-center mb-4">
+                    <div className="w-10 h-10 rounded-2xl bg-teal-50 dark:bg-teal-950/70 border border-teal-200 dark:border-teal-500/30 text-teal-700 dark:text-[#00F2B0] flex items-center justify-center mb-4">
                       <Icon className="w-5 h-5" />
                     </div>
-                    <h3 className="text-sm font-bold text-slate-900 mb-2">
+                    <h3 className="text-sm font-bold text-slate-900 dark:text-white mb-2">
                       {std.title}
                     </h3>
-                    <p className="text-xs text-slate-600 leading-relaxed">
+                    <p className="text-xs text-slate-600 dark:text-slate-400 leading-relaxed">
                       {std.desc}
                     </p>
                   </div>
@@ -372,43 +310,41 @@ export default function AboutPage() {
             </div>
           </div>
 
-
-
           {/* Live Animated Metrics Counter */}
           <div className="mb-20">
             <MetricsBar className="relative z-20 max-w-8xl mx-auto px-0" />
           </div>
 
-          {/* CTA Box (Motivo style) */}
-          <div className="bg-[#f0fdfa] rounded-3xl p-8 sm:p-12 border border-teal-100 text-center max-w-5xl mx-auto shadow-sm">
-            <span className="text-xs font-bold uppercase tracking-wider text-teal-700 block mb-2">
+          {/* CTA Box */}
+          <div className="bg-[#f0fdfa] dark:bg-[#0a1520] rounded-3xl p-8 sm:p-12 border border-teal-100 dark:border-teal-900/50 text-center max-w-5xl mx-auto shadow-sm dark:shadow-[0_10px_35px_rgba(0,0,0,0.6)]">
+            <span className="text-xs font-bold uppercase tracking-wider text-teal-700 dark:text-[#00F2B0] block mb-2">
               READY TO RESTORE YOUR PC?
             </span>
-            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 tracking-tight mb-4">
+            <h2 className="text-3xl sm:text-4xl font-bold text-slate-900 dark:text-white tracking-tight mb-4">
               Explore our diagnostic guides{" "}
-              <span className="font-serif-accent text-teal-700 italic font-normal">
+              <span className="font-serif-accent text-teal-700 dark:text-[#00F2B0] italic font-normal">
                 or request lab support.
               </span>
             </h2>
-            <p className="text-sm text-slate-600 max-w-lg mx-auto mb-8">
+            <p className="text-sm text-slate-600 dark:text-slate-300 max-w-lg mx-auto mb-8">
               Choose a specific problem domain to begin self-repair immediately, or reach out to our laboratory specialists.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-4">
               <Link
                 href="/software-problems"
-                className="px-6 py-3.5 rounded-full bg-slate-950 text-white text-xs sm:text-sm font-semibold shadow-md hover:bg-slate-800 transition"
+                className="px-6 py-3.5 rounded-full bg-slate-950 dark:bg-gradient-to-r dark:from-[#00F2B0] dark:to-[#00D2A0] text-white dark:text-[#060b11] text-xs sm:text-sm font-semibold dark:font-bold shadow-md hover:bg-slate-800 dark:hover:bg-[#20f5be] hover:dark:shadow-[0_0_20px_rgba(0,242,176,0.35)] transition"
               >
                 Browse Software Guides
               </Link>
               <Link
                 href="/hardware-problems"
-                className="px-6 py-3.5 rounded-full bg-white text-slate-800 text-xs sm:text-sm font-semibold border border-slate-200 hover:border-teal-300 shadow-2xs transition"
+                className="px-6 py-3.5 rounded-full bg-white dark:bg-[#0c1622] text-slate-800 dark:text-slate-200 text-xs sm:text-sm font-semibold border border-slate-200 dark:border-teal-900/60 hover:border-teal-300 dark:hover:border-teal-500/50 shadow-2xs transition"
               >
                 Hardware Diagnostic Suite
               </Link>
               <Link
                 href="/contact"
-                className="px-6 py-3.5 rounded-full bg-teal-700 text-white text-xs sm:text-sm font-semibold shadow-md hover:bg-teal-800 transition"
+                className="px-6 py-3.5 rounded-full bg-teal-700 dark:bg-teal-600 text-white text-xs sm:text-sm font-semibold shadow-md hover:bg-teal-800 dark:hover:bg-teal-500 transition"
               >
                 Contact Diagnostic Lab
               </Link>

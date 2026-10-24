@@ -82,7 +82,7 @@ function AnimatedMetricValue({ rawValue, duration = 1800 }: AnimatedNumberProps)
   return (
     <h3
       ref={elementRef}
-      className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900"
+      className="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 dark:text-white"
     >
       {displayValue}
     </h3>
@@ -92,10 +92,10 @@ function AnimatedMetricValue({ rawValue, duration = 1800 }: AnimatedNumberProps)
 export default function MetricsBar({ className }: { className?: string }) {
   const icons = [Users, Send, TrendingUp, Clock];
   const styles = [
-    { bg: "bg-emerald-50", text: "text-emerald-600" },
-    { bg: "bg-teal-50", text: "text-teal-600" },
-    { bg: "bg-cyan-50", text: "text-cyan-600" },
-    { bg: "bg-teal-50", text: "text-teal-700" },
+    { bg: "bg-emerald-50 dark:bg-emerald-950/60", text: "text-emerald-600 dark:text-[#00F2B0]", border: "border-emerald-100 dark:border-emerald-500/30" },
+    { bg: "bg-teal-50 dark:bg-teal-950/60", text: "text-teal-600 dark:text-teal-300", border: "border-teal-100 dark:border-teal-500/30" },
+    { bg: "bg-cyan-50 dark:bg-cyan-950/60", text: "text-cyan-600 dark:text-cyan-300", border: "border-cyan-100 dark:border-cyan-500/30" },
+    { bg: "bg-teal-50 dark:bg-teal-950/60", text: "text-teal-700 dark:text-[#00F2B0]", border: "border-teal-100 dark:border-teal-500/30" },
   ];
 
   return (
@@ -103,8 +103,8 @@ export default function MetricsBar({ className }: { className?: string }) {
       id="metrics"
       className={className ?? "relative -mt-6 sm:mb-15 z-20 max-w-8xl px-5 sm:px-20 mx-auto"}
     >
-      <div className="bg-white rounded-3xl border border-slate-200/80 shadow-lg shadow-slate-200/50 p-6 sm:p-8">
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-slate-100">
+      <div className="bg-white dark:bg-[#0c1622] rounded-3xl border border-slate-200/80 dark:border-teal-900/50 shadow-lg dark:shadow-[0_10px_35px_rgba(0,0,0,0.7)] p-6 sm:p-8 transition-colors duration-200">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 divide-y sm:divide-y-0 sm:divide-x divide-slate-100 dark:divide-teal-950/80">
           {metricsData.map((item, idx) => {
             const Icon = icons[idx % icons.length];
             const style = styles[idx % styles.length];
@@ -114,13 +114,13 @@ export default function MetricsBar({ className }: { className?: string }) {
                 className={`flex items-center gap-4 ${idx !== 0 ? "pt-4 sm:pt-0 sm:pl-6" : ""}`}
               >
                 <div
-                  className={`w-12 h-12 rounded-2xl ${style.bg} ${style.text} flex items-center justify-center shrink-0 transition-transform hover:scale-110 duration-200`}
+                  className={`w-12 h-12 rounded-2xl ${style.bg} ${style.text} ${style.border} border flex items-center justify-center shrink-0 transition-all hover:scale-110 duration-200 shadow-2xs hover:dark:shadow-[0_0_15px_rgba(0,242,176,0.3)]`}
                 >
                   <Icon className="w-5 h-5" />
                 </div>
                 <div>
                   <AnimatedMetricValue rawValue={item.value} />
-                  <p className="text-xs sm:text-sm text-slate-500 font-medium">
+                  <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400 font-medium">
                     {item.label}
                   </p>
                 </div>

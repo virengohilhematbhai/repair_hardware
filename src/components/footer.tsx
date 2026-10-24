@@ -16,13 +16,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-white border-t border-slate-200/80 pt-14 pb-10 mt-auto">
-      <div className="max-w-8xl px-5 sm:px-20 mx-auto ">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 mb-12 sm:mb-16">
+    <footer className="bg-white dark:bg-[#060b11] border-t border-slate-200/80 dark:border-teal-950/80 pt-14 pb-5 mt-auto transition-colors duration-200">
+      <div className="max-w-8xl px-5 sm:px-20 ">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-12 gap-8 sm:gap-10 mb-12 sm:mb-5">
           {/* Brand Column */}
           <div className="sm:col-span-2 lg:col-span-4">
             <Link href="/" className="inline-flex items-center gap-2.5 mb-4 group shrink-0">
-              <div className="w-9 h-9 rounded-xl overflow-hidden bg-slate-900 border border-slate-200/80 flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform shrink-0">
+              <div className="w-9 h-9 rounded-xl overflow-hidden bg-slate-900 border border-slate-200/80 dark:border-teal-500/30 flex items-center justify-center shadow-xs group-hover:scale-105 transition-transform shrink-0">
                 <Image
                   src="/logo.jpg"
                   alt="HW Nexus Logo"
@@ -32,16 +32,16 @@ export default function Footer() {
                 />
               </div>
               <div className="shrink-0">
-                <span className="text-base font-bold tracking-tight text-slate-900 block leading-tight">
+                <span className="text-base font-bold tracking-tight text-slate-900 dark:text-white block leading-tight">
                   HW Nexus
                 </span>
-                <span className="text-[9px] font-semibold tracking-wider text-slate-400 uppercase block">
+                <span className="text-[9px] font-semibold tracking-wider text-slate-400 dark:text-teal-400/90 uppercase block">
                   FIX YOUR TECH
                 </span>
               </div>
             </Link>
 
-            <p className="text-xs text-slate-500 leading-relaxed max-w-sm mb-6">
+            <p className="text-xs text-slate-500 dark:text-slate-400 leading-relaxed max-w-sm mb-6">
               The modern workspace for computer troubleshooting, telemetry diagnostics, and precision hardware &amp; software recovery.
             </p>
 
@@ -50,7 +50,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="X Twitter"
-                className="w-8 h-8 rounded-full border border-slate-200 hover:text-slate-900 hover:border-slate-400 flex items-center justify-center transition"
+                className="w-8 h-8 rounded-full border border-slate-200 dark:border-teal-900/50 hover:text-slate-900 dark:hover:text-[#00F2B0] hover:border-slate-400 dark:hover:border-[#00F2B0]/50 flex items-center justify-center transition hover:dark:shadow-[0_0_10px_rgba(0,242,176,0.2)]"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                   <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
@@ -59,7 +59,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="LinkedIn"
-                className="w-8 h-8 rounded-full border border-slate-200 hover:text-slate-900 hover:border-slate-400 flex items-center justify-center transition"
+                className="w-8 h-8 rounded-full border border-slate-200 dark:border-teal-900/50 hover:text-slate-900 dark:hover:text-[#00F2B0] hover:border-slate-400 dark:hover:border-[#00F2B0]/50 flex items-center justify-center transition hover:dark:shadow-[0_0_10px_rgba(0,242,176,0.2)]"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                   <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 10.9h2.76v8.37H6.46v-8.37M7.84 6.2a1.62 1.62 0 0 0-1.63 1.62c0 .9.73 1.62 1.63 1.62a1.62 1.62 0 1 0 0-3.24z" />
@@ -68,7 +68,7 @@ export default function Footer() {
               <a
                 href="#"
                 aria-label="GitHub"
-                className="w-8 h-8 rounded-full border border-slate-200 hover:text-slate-900 hover:border-slate-400 flex items-center justify-center transition"
+                className="w-8 h-8 rounded-full border border-slate-200 dark:border-teal-900/50 hover:text-slate-900 dark:hover:text-[#00F2B0] hover:border-slate-400 dark:hover:border-[#00F2B0]/50 flex items-center justify-center transition hover:dark:shadow-[0_0_10px_rgba(0,242,176,0.2)]"
               >
                 <svg className="w-3.5 h-3.5 fill-current" viewBox="0 0 24 24">
                   <path
@@ -83,27 +83,27 @@ export default function Footer() {
 
           {/* Solutions Column */}
           <div className="lg:col-span-2">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-4">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-4">
               Solutions
             </h4>
-            <ul className="space-y-2.5 text-xs text-slate-500">
+            <ul className="space-y-2.5 text-xs text-slate-500 dark:text-slate-400">
               <li>
-                <Link href="/display-problems" className="hover:text-slate-900 transition">
+                <Link href="/display-problems" className="hover:text-slate-900 dark:hover:text-[#00F2B0] transition">
                   Display &amp; GPU Issues
                 </Link>
               </li>
               <li>
-                <Link href="/software-problems" className="hover:text-slate-900 transition">
+                <Link href="/software-problems" className="hover:text-slate-900 dark:hover:text-[#00F2B0] transition">
                   Software &amp; BSOD Crashes
                 </Link>
               </li>
               <li>
-                <Link href="/hardware-problems" className="hover:text-slate-900 transition">
+                <Link href="/hardware-problems" className="hover:text-slate-900 dark:hover:text-[#00F2B0] transition">
                   Hardware &amp; Thermal Faults
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-slate-900 transition">
+                <Link href="/contact" className="hover:text-slate-900 dark:hover:text-[#00F2B0] transition">
                   Custom Diagnostics
                 </Link>
               </li>
@@ -112,41 +112,40 @@ export default function Footer() {
 
           {/* Company Column */}
           <div className="lg:col-span-2">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-4">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-4">
               Company
             </h4>
-            <ul className="space-y-2.5 text-xs text-slate-500">
+            <ul className="space-y-2.5 text-xs text-slate-500 dark:text-slate-400">
               <li>
-                <Link href="/about" className="hover:text-slate-900 transition">
+                <Link href="/about" className="hover:text-slate-900 dark:hover:text-[#00F2B0] transition">
                   About Platform
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="hover:text-slate-900 transition">
+                <Link href="/contact" className="hover:text-slate-900 dark:hover:text-[#00F2B0] transition">
                   Contact &amp; Support
                 </Link>
               </li>
-
               <li>
-                <Link href="/about" className="hover:text-slate-900 transition">
+                <Link href="/about" className="hover:text-slate-900 dark:hover:text-[#00F2B0] transition">
                   Diagnostics Method
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Newsletter Column - exactly matching Motivo screenshot */}
+          {/* Newsletter Column */}
           <div className="sm:col-span-2 lg:col-span-4">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 mb-2">
+            <h4 className="text-xs font-bold uppercase tracking-wider text-slate-900 dark:text-white mb-2">
               Stay in the loop
             </h4>
-            <p className="text-xs text-slate-500 mb-4">
+            <p className="text-xs text-slate-500 dark:text-slate-400 mb-4">
               Get the latest updates, diagnostic scripts, and insights straight to your inbox.
             </p>
 
             {subscribed ? (
-              <div className="flex items-center gap-2 text-xs font-medium text-emerald-700 bg-emerald-50 px-3 py-2.5 rounded-full border border-emerald-200">
-                <Check className="w-3.5 h-3.5 text-emerald-600" />
+              <div className="flex items-center gap-2 text-xs font-medium text-emerald-700 dark:text-[#00F2B0] bg-emerald-50 dark:bg-teal-950/60 px-3 py-2.5 rounded-full border border-emerald-200 dark:border-emerald-500/30">
+                <Check className="w-3.5 h-3.5 text-emerald-600 dark:text-[#00F2B0]" />
                 <span>Subscribed! Thank you.</span>
               </div>
             ) : (
@@ -157,11 +156,11 @@ export default function Footer() {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="Enter your email"
-                  className="w-full pl-4 pr-11 py-2.5 bg-slate-50/90 border border-slate-200 rounded-full text-xs text-slate-800 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500 focus:bg-white transition"
+                  className="w-full pl-4 pr-11 py-2.5 bg-slate-50 dark:bg-[#0c1622] border border-slate-200 dark:border-teal-900/50 rounded-full text-xs text-slate-800 dark:text-white placeholder-slate-400 dark:placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-teal-500 dark:focus:ring-[#00F2B0] focus:bg-white dark:focus:bg-[#0f1d2d] transition"
                 />
                 <button
                   type="submit"
-                  className="absolute right-1 w-8 h-8 rounded-full bg-slate-950 hover:bg-slate-800 text-white flex items-center justify-center transition active:scale-95"
+                  className="absolute right-1 w-8 h-8 rounded-full bg-slate-950 dark:bg-[#00F2B0] hover:bg-slate-800 dark:hover:bg-[#20f5be] text-white dark:text-[#060b11] flex items-center justify-center transition active:scale-95 shadow-xs hover:dark:shadow-[0_0_12px_rgba(0,242,176,0.4)]"
                   aria-label="Subscribe"
                 >
                   <ArrowRight className="w-3.5 h-3.5" />
@@ -172,16 +171,16 @@ export default function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="pt-8 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 text-center sm:text-left">
+        <div className="pt-5 border-t border-slate-100 dark:border-teal-950/80 flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] text-slate-400 dark:text-slate-500 text-center sm:text-left">
           <p>© 2026 HW Nexus. All rights reserved.</p>
           <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6">
-            <Link href="/about" className="hover:text-slate-600 transition">
+            <Link href="/about" className="hover:text-slate-600 dark:hover:text-slate-300 transition">
               Terms of Service
             </Link>
-            <Link href="/about" className="hover:text-slate-600 transition">
+            <Link href="/about" className="hover:text-slate-600 dark:hover:text-slate-300 transition">
               Privacy Policy
             </Link>
-            <Link href="/contact" className="hover:text-slate-600 transition">
+            <Link href="/contact" className="hover:text-slate-600 dark:hover:text-slate-300 transition">
               Support Center
             </Link>
           </div>
